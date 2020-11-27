@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "webcall-monitor"
+version = "0.1"
+description = "API scapper for Queue monitor used on Czech Vehicle Register"
+readme = "README.md"
+
+authors = [
+    "Roman Novosad <r.novosad@gmail.com>"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+include = ["*.yaml", "*.json"]
+
+packages = [
+    { include = "webcall_monitor", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "~3.8.3"
+Scrapy = "^2.4.0"
+pymongo = "^3.11.0"
+
+[tool.poetry.dev-dependencies]
+
+[app]
